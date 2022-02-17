@@ -14,10 +14,9 @@ import {
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename='/phlaunt-web-02'>
         <Routes>
           <Route path="/" element={<Navigate to="/app" />} />
-          <Route path="/phlaunt-web-02" element={<Navigate to="/app" />} />
           <Route path="/app" element={<App />} />
 
           <Route path="*" element={<h1>404</h1>} />
